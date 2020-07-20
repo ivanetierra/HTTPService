@@ -1,7 +1,4 @@
-package payroll.persistance;
-
-import payroll.domain.Employee;
-import payroll.domain.Role;
+package payroll;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

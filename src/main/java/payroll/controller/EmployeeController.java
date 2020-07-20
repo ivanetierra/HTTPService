@@ -1,8 +1,8 @@
 package payroll.controller;
 
 import org.springframework.web.bind.annotation.*;
-import payroll.domain.Employee;
-import payroll.persistance.EmployeeRepository;
+import payroll.Employee;
+import payroll.EmployeeRepository;
 
 import java.util.List;
 

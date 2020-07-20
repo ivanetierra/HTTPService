@@ -1,10 +1,9 @@
-package payroll.domain;
-
-import java.util.Objects;
+package payroll;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.Objects;
 
 @Entity
 public

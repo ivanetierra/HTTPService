@@ -1,4 +1,4 @@
-package payroll.domain;
+package payroll;
 
 public enum Role {
     burglar("burglar", 100),
