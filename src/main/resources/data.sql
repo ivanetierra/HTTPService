@@ -1,1 +1,1 @@
-INSERT INTO Employee(name, role) VALUES('Ivan', 'Boss');
+INSERT INTO EMPLOYEE VALUES (8,'Ivan', 2, 999)

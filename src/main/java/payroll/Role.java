@@ -13,20 +13,8 @@ public enum Role {
         this.salary = salary;
     }
 
-    public int getSalaryRole() {
+    public int getSalaryByRole() {
         return salary;
-    }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
     }
 
 }

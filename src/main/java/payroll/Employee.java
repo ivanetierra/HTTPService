@@ -50,7 +50,7 @@ class Employee {
     }
 
     public int getSalary() {
-        return role.getSalaryRole();
+        return role.getSalaryByRole();
     }
 
     @Override
@@ -72,7 +72,7 @@ class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" + "idaaaa=" + this.id + ", name=" + this.name + '\''
+        return "Employee{" + "iddddd=" + this.id + ", name=" + this.name + '\''
                 + ", role=" + this.role + '\'' + ", salary=" + this.salary + '}';
     }
 }
