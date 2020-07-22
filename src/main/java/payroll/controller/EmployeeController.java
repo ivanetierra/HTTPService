@@ -3,8 +3,10 @@ package payroll.controller;
 import org.springframework.web.bind.annotation.*;
 import payroll.Employee;
 import payroll.EmployeeRepository;
+import payroll.Role;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 class EmployeeController {
@@ -32,8 +34,15 @@ class EmployeeController {
     @GetMapping("/employees/{id}")
     Employee one(@PathVariable Long id) {
 
-        return repository.findById(id)
-                .orElseThrow(() -> new EmployeeNotFoundException(id));
+        return repository.findById(id).orElseThrow(() -> new EmployeeNotFoundException(id));
+    }
+
+    //find by role
+    @GetMapping("employees/role/{role}")
+    Optional<List<Employee>> one(@PathVariable String role) {
+
+        Optional<List<Employee>> listEmployeesByRole = Optional.ofNullable(repository.findByRole(Role.valueOf(role)).orElseThrow(() -> new EmployeeNotFoundException(role)));
+        return listEmployeesByRole;
     }
 
     @PutMapping("/employees/{id}")
